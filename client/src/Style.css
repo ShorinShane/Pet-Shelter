@@ -1,0 +1,119 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bold;
+}
+.newInput{
+    border-radius: 5px;
+    border:1px solid black;
+    width:50%;
+    height:30px;
+    margin:1px;
+}
+.header{
+    margin:2% 0 0 3%;
+    font-size: 30px;
+}
+.listHeader{
+    margin:2% 0 0 3%;
+}
+p{
+    color: royalblue;
+    margin-left:2%;
+}
+h2{
+    margin-left:3%;
+    display: inline;
+}
+h4{
+    display: inline;
+    
+}
+.detes{
+    margin-top:2%;
+    display: inline-block;
+}
+.petShelter{
+    margin: 1% 0 0 2%;
+    width: 500px;
+    border-collapse: collapse;
+}
+.petShelter th, .petShelter td{
+    border: 1px solid black;
+    padding:8px;
+}
+.petShelter tr:nth-child(even){background-color: lightblue;}
+.petShelter th{
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: lightblue;
+    color: white;
+}
+.form-group {
+    width:90%;
+    display: block;
+    margin: 0 0 0 2%;;
+    border: 1px solid lightgrey;
+    padding:1%;
+}
+.skillLabel{
+    margin-left:15px;
+    color: grey;
+}
+h3{
+    color:grey;
+}
+.btn-edit{
+    border-radius: 5px;
+    border:none;
+    background-image: linear-gradient(rgb(229, 229, 229), rgb(89, 89, 89));
+    color:white; 
+    width:60px;
+    font-weight: normal;
+    margin-left: 40px;
+}
+.btn-adopt{
+    border-radius: 5px;
+    border:none;
+    background-image: linear-gradient(rgb(229, 229, 229), rgb(89, 89, 89));
+    color:white; 
+    width:120px;
+    height:40px;
+    font-weight: normal;
+    margin-left: 40px;
+}
+.btn-like{
+    border-radius: 5px;
+    border:none;
+    background-image: linear-gradient(rgb(212, 214, 236), rgb(56, 44, 99));
+    color:white; 
+    width:120px;
+    height:40px;
+    font-weight: normal;
+    margin-left:40px;
+}
+.btn-detail{
+    border-radius: 5px;
+    border:none;
+    background-image: linear-gradient(rgb(212, 214, 236), rgb(56, 44, 99));
+    color:white; 
+    width:60px;
+    font-weight: normal;
+    margin-left:40px;
+}
+.btn-create{
+    margin:2px 0 0 8%;;
+    border-radius: 5px;
+    font-size:18px;
+    border:none;
+    background-color: cornflowerblue;
+    color:white; 
+    padding:5px;
+    height:40px;
+    width:80px;
+}
+.homeLink{
+    margin-left:80%;
+}
