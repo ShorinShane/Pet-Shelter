@@ -28,7 +28,7 @@ class Create extends Component {
 
     makepetShelter = (e) => {
         e.preventDefault();
-        axios.post("http://localhost:8000/api/petShelters", this.state.newpetShelter)
+        axios.post("/api/petShelters", this.state.newpetShelter)
         .then( Response => {
             if(Response.data.errors){
             this.setState({errors: Response.data.errors.errors})

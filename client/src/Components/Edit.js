@@ -21,7 +21,7 @@ class Edit extends Component {
 
     componentDidMount = () => {
         console.log(this.props.match.params._id);
-        axios.get(`http://localhost:8000/api/petShelters/${this.props.match.params._id}`)
+        axios.get(`/api/petShelters/${this.props.match.params._id}`)
             .then( Response => {
                 this.setState({petShelter: Response.data.petShelter});
             })
@@ -38,7 +38,7 @@ class Edit extends Component {
 
     updatepetShelter = (e) => {
         e.preventDefault();
-        axios.put(`http://localhost:8000/api/petShelters/${this.state.petShelter._id}`, this.state.petShelter)
+        axios.put(`/api/petShelters/${this.state.petShelter._id}`, this.state.petShelter)
         .then( Response => {
             if(Response.data.errors){
             this.setState({errors: Response.data.errors.errors})

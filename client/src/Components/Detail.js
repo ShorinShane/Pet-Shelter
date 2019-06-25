@@ -23,7 +23,7 @@ class Detail extends Component {
 
     
     componentDidMount = () => {
-        axios.get(`http://localhost:8000/api/petShelters/${this.props.match.params._id}`)
+        axios.get(`/api/petShelters/${this.props.match.params._id}`)
         .then( Response => {
             this.setState({petShelter: Response.data.petShelter});
         })
@@ -34,7 +34,7 @@ class Detail extends Component {
     
     delete = (e) => {
         e.preventDefault();
-        axios.delete(`http://localhost:8000/api/petShelters/${this.state.petShelter._id}`)
+        axios.delete(`/api/petShelters/${this.state.petShelter._id}`)
         .then( Response => {
             this.componentDidMount();
             this.props.history.push("/pets");
@@ -43,7 +43,7 @@ class Detail extends Component {
 
     add = (e) => {
         e.preventDefault();
-        axios.put(`http://localhost:8000/api/petShelters/${this.state.petShelter._id}`, this.state.petShelter)
+        axios.put(`/api/petShelters/${this.state.petShelter._id}`, this.state.petShelter)
         .then( Response => {
             this.state.petShelter.likes += 1;
             this.props.history.push(`/pets/${this.state.petShelter._id}`);

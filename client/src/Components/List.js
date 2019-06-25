@@ -25,7 +25,7 @@ class List extends Component {
     }
 
     componentDidMount = () => {
-        axios.get("http://localhost:8000/api/petShelters")
+        axios.get("/api/petShelters")
             .then( Response => {
                 this.setState({petShelters: this.sortpetShelters(Response.data.petShelters)});
             })
